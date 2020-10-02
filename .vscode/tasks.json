@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "practice_Folder/main.cpp",
+                "HelloWorld/main.cpp",
                 "-o",
-                "practice_Folder/main"
+                "HelloWorld/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "practice_Folder/main",
+            "command": "HelloWorld/main",
             "dependsOn":[
                 "build"
             ],
