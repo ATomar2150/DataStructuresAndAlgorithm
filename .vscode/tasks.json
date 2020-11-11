@@ -8,16 +8,17 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "HelloWorld/main.cpp",
+                "LinkedListOperation_Appending_Node/main.cpp",
+                "LinkedListOperation_Appending_Node/NumberList.cpp",
                 "-o",
-                "HelloWorld/main"
+                "LinkedListOperation_Appending_Node/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "HelloWorld/main",
+            "command": "LinkedListOperation_Appending_Node/main",
             "dependsOn":[
                 "build"
             ],
