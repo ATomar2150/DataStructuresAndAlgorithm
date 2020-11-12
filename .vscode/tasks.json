@@ -8,17 +8,17 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "LinkedListOperation_Appending_Node/main.cpp",
-                "LinkedListOperation_Appending_Node/NumberList.cpp",
+                "LinkedListTemplate/main.cpp",
+                "LinkedListTemplate/NumberList.cpp",
                 "-o",
-                "LinkedListOperation_Appending_Node/main"
+                "LinkedListTemplate/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "LinkedListOperation_Appending_Node/main",
+            "command": "LinkedListTemplate/main",
             "dependsOn":[
                 "build"
             ],

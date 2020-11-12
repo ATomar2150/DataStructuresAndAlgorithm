@@ -19,14 +19,13 @@ class NumberList
             }
 
             //destructor
-            ~NumberList()
-            {};
+            ~NumberList();
 
             //LinkedList operations
             void appendNode(double);
             void insertNode(double);
             void deleteNode(double);
-            void displayNode(double);
+            void displayNode() const;
     
 };
 
