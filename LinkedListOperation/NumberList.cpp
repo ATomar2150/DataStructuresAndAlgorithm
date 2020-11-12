@@ -22,7 +22,7 @@ void NumberList::appendNode(double num)
     {
         nodePtr = head;
 
-        while(nodePtr -> next)
+        while(nodePtr->next)
         {
             nodePtr = nodePtr->next;
         }
@@ -56,12 +56,12 @@ void NumberList::insertNode(double num)
     //Allocate new node and store num over there
     newNode = new ListNode;
     newNode->value = num;
+    newNode->next = NULL;
 
     //if there is no node in the list, make newNode the first node
     if(head == 0)
     {
-        head = newNode;
-        newNode->next = NULL;
+          head = newNode;
     }
     else
     {

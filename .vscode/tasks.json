@@ -8,17 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "LinkedListTemplate/main.cpp",
-                "LinkedListTemplate/NumberList.cpp",
+                "YourOwnLinkedList/main.cpp",
                 "-o",
-                "LinkedListTemplate/main"
+                "YourOwnLinkedList/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "LinkedListTemplate/main",
+            "command": "YourOwnLinkedList/main",
             "dependsOn":[
                 "build"
             ],
