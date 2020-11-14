@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "YourOwnLinkedList/main.cpp",
+                "StackOperations/main.cpp",
                 "-o",
-                "YourOwnLinkedList/main"
+                "StackOperations/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "YourOwnLinkedList/main",
+            "command": "StackOperations/main",
             "dependsOn":[
                 "build"
             ],
