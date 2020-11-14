@@ -20,9 +20,9 @@ class LinkedList
 
             void appendNode(double);
             void insertNode(double);
-            void deleteNode(double);
             void displayNode() const;
-            
+            void reverseNode();
+            void deleteNode(double);
 };
 
 void LinkedList::appendNode(double num)
@@ -32,6 +32,7 @@ void LinkedList::appendNode(double num)
     newNode->next = NULL;
     Node* nodePtr; //To move through the list
 
+    cout<<"Nodes are appended.\n";
     if(!head)
     {
        head = newNode;
@@ -72,6 +73,7 @@ void LinkedList::insertNode(double num)
     Node* previousNode = NULL;
     Node* nodePtr;
 
+    cout<<"Node 14.4 is inserted.\n";
     if(head == 0)
     {
         head = newNode;
@@ -107,6 +109,8 @@ void LinkedList::deleteNode(double num)
     Node* nodePtr;
     Node* previousNode;
 
+    cout<<"Nodes are deleted.\n";
+
     if(head == 0)
     {
         return;
@@ -136,6 +140,26 @@ void LinkedList::deleteNode(double num)
     
 }
 
+void LinkedList::reverseNode()
+{
+   Node* current;
+   Node* prev;
+   Node* next;
+
+   current = head;
+   prev = NULL;
+
+   cout<<"Nodes are reversed.\n";
+   while (current != NULL)
+   {
+       next = current->next;
+       current->next = prev;
+       prev = current;
+       current = next;
+   }
+    head = prev;
+}
+
 LinkedList::~LinkedList()
 {
     Node* nodePtr;
@@ -163,8 +187,13 @@ int main()
     list.insertNode(14.4);
     list.displayNode();
     cout<<"================================\n";
-    list.deleteNode(12.2);
+    list.reverseNode();
     list.displayNode();
+    cout<<"================================\n";
+    list.deleteNode(11.1);
+    list.displayNode();
+    cout<<"================================\n";
+
 
     return 0;
 }
