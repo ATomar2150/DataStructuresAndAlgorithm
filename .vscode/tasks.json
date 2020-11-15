@@ -8,18 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "MathOperation/main.cpp",
-                "MathOperation/IntStack.cpp",
-                "MathOperation/MathStack.cpp",
+                "StackTemplate/main.cpp",
                 "-o",
-                "MathOperation/main"
+                "StackTemplate/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "MathOperation/main",
+            "command": "StackTemplate/main",
             "dependsOn":[
                 "build"
             ],
