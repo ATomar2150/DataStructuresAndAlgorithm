@@ -8,17 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "DynamicStack/main.cpp",
-                "DynamicStack/DynIntStack.cpp",
+                "STLstackContainer/main.cpp",
                 "-o",
-                "StackTemplate/main"
+                "STLstackContainer/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "StackTemplate/main",
+            "command": "STLstackContainer/main",
             "dependsOn":[
                 "build"
             ],
