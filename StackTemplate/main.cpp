@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//Constants for the menu choices
+//Constants for the menu choices.
 const int PUSH_CHOICE = 1,
           POP_CHOICE = 2,
           QUIT_CHOICE = 3;
@@ -17,21 +17,21 @@ void popItem(Stack<string>&);
 
 int main()
 {
-    int stackSize; //Get the stack size
-    int choice; //To hold the menu choices
+    int stackSize; //Get the stack size.
+    int choice; //To hold the menu choices.
 
     //Get the stack size
     getStackSize(stackSize);
 
-    //Create the stack
+    //Create the stack.
     Stack<string> stack(stackSize);
 
     do
     {
-        //Get the user's menu choice
+        //Get the user's menu choice.
         menu(choice);
 
-        //Perform the user's choice
+        //Perform the user's choice.
         if(choice != QUIT_CHOICE)
         {
             switch(choice)
@@ -54,11 +54,11 @@ int main()
 
 void getStackSize(int &size)
 {
-    //Get the desired stack size
+    //Get the desired stack size.
     cout<<"How big should I make the stack? ";
     cin >> size;
 
-    //Validate the size
+    //Validate the size.
     while(size < 1)
     {
         cout<<"Enter 1 or greater: ";
@@ -68,7 +68,7 @@ void getStackSize(int &size)
 
 void menu(int &choice)
 {
-    //Display the menu and get the user's choice
+    //Display the menu and get the user's choice.
     cout<<"\nWhat do you want to do?\n"
         <<PUSH_CHOICE
         <<"- Push an item onto the stack\n"
@@ -90,7 +90,7 @@ void pushItem(Stack<string> &stack)
 {
     string item;
 
-    //Get an item to push onto the stack
+    //Get an item to push onto the stack.
     cin.ignore();
 
     cout<<"\nEnter an item: ";
@@ -106,7 +106,7 @@ void popItem(Stack<string> &stack)
     //Pop the item
     stack.pop(item);
 
-    //Display the item
+    //Display the item.
     if(item != " ")
     {
         cout<<item<<" was popped.\n";

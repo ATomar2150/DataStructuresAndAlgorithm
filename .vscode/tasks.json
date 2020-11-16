@@ -8,7 +8,8 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "StackTemplate/main.cpp",
+                "DynamicStack/main.cpp",
+                "DynamicStack/DynIntStack.cpp",
                 "-o",
                 "StackTemplate/main"
             ],
