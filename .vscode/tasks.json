@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "STLDequeAndQueue/main.cpp",
+                "RecursionFactorial/main.cpp",
                 "-o",
-                "STLDequeAndQueue/main"
+                "RecursionFactorial/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "STLDequeAndQueue/main",
+            "command": "RecursionFactorial/main",
             "dependsOn":[
                 "build"
             ],
