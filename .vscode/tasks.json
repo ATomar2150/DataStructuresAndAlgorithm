@@ -8,17 +8,17 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "StaticQueque/main.cpp",
-                "StaticQueque/IntQueue.cpp",
+                "DynamicQueue/main.cpp",
+                "DynamicQueue/DynamicQueue.cpp",
                 "-o",
-                "StaticQueque/main"
+                "DynamicQueue/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "StaticQueque/main",
+            "command": "DynamicQueue/main",
             "dependsOn":[
                 "build"
             ],
