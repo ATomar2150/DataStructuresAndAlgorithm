@@ -8,16 +8,17 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "STLstackContainer/main.cpp",
+                "StaticQueque/main.cpp",
+                "StaticQueque/IntQueue.cpp",
                 "-o",
-                "STLstackContainer/main"
+                "StaticQueque/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "STLstackContainer/main",
+            "command": "StaticQueque/main",
             "dependsOn":[
                 "build"
             ],
