@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "RecursiveFibonacciSeries/main.cpp",
+                "RecursiveLinkedListOperation/main.cpp",
                 "-o",
-                "RecursiveFibonacciSeries/main"
+                "RecursiveLinkedListOperation/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "RecursiveFibonacciSeries/main",
+            "command": "RecursiveLinkedListOperation/main",
             "dependsOn":[
                 "build"
             ],
