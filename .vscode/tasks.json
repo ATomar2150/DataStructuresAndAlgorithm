@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "RecursionFactorial/main.cpp",
+                "RecursiveGCDFunction/main.cpp",
                 "-o",
-                "RecursionFactorial/main"
+                "RecursiveGCDFunction/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "RecursionFactorial/main",
+            "command": "RecursiveGCDFunction/main",
             "dependsOn":[
                 "build"
             ],
