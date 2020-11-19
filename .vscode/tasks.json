@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "RecursiveLinkedListOperation/main.cpp",
+                "BinaryTreeOperations/main.cpp",
                 "-o",
-                "RecursiveLinkedListOperation/main"
+                "BinaryTreeOperations/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "RecursiveLinkedListOperation/main",
+            "command": "BinaryTreeOperations/main",
             "dependsOn":[
                 "build"
             ],
