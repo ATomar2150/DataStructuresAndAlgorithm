@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "BinaryTreeOperations/main.cpp",
+                "Demo_ArrayADT/main.cpp",
                 "-o",
-                "BinaryTreeOperations/main"
+                "Demo_ArrayADT/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "BinaryTreeOperations/main",
+            "command": "Demo_ArrayADT/main",
             "dependsOn":[
                 "build"
             ],
