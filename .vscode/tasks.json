@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "Demo_ArrayADT/main.cpp",
+                "InsertingAnArray/main.cpp",
                 "-o",
-                "Demo_ArrayADT/main"
+                "InsertingAnArray/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "Demo_ArrayADT/main",
+            "command": "InsertingAnArray/main",
             "dependsOn":[
                 "build"
             ],
