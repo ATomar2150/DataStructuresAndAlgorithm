@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "InsertingAnArray/main.cpp",
+                "OperationOnArrayByAbdulBari/main.cpp",
                 "-o",
-                "InsertingAnArray/main"
+                "OperationOnArrayByAbdulBari/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "InsertingAnArray/main",
+            "command": "OperationOnArrayByAbdulBari/main",
             "dependsOn":[
                 "build"
             ],
