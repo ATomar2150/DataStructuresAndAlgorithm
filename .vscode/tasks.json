@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "OperationOnArrayByAbdulBari/main.cpp",
+                "AbdulBari_LinearSearch/main.cpp",
                 "-o",
-                "OperationOnArrayByAbdulBari/main"
+                "AbdulBari_LinearSearch/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "OperationOnArrayByAbdulBari/main",
+            "command": "AbdulBari_LinearSearch/main",
             "dependsOn":[
                 "build"
             ],
