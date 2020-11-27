@@ -36,6 +36,23 @@ void reverse(struct Array* arr)
 
 }
 
+void swap(int* A, int* B)
+{
+    int temp;
+    temp = *A;
+    *A = *B;
+    *B = temp;
+}
+
+void reverse2(struct Array* arr)
+{
+    int i, j;
+    for(i = 0, j = arr->length-1; i < j; i++, j--)
+    {
+        swap(&arr->A[i], &arr->A[j]);
+    }
+}
+
 int main()
 {
     struct Array arr = {{2, 3, 4 ,5, 9}, 5, 10};
@@ -43,7 +60,12 @@ int main()
     cout <<"The original array is: ";
     display(arr);
     cout <<"\nThe reverse array is: ";
-    reverse(&arr);
+    //reverse(&arr);
+    //display(arr);
+
+    //Applying another method
+    reverse2(&arr);
     display(arr);
+
     return 0;
 }
