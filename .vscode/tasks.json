@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "AbdulBari_SortedArray/main.cpp",
+                "AbdulBari_MergingArray/main.cpp",
                 "-o",
-                "AbdulBari_SortedArray/main"
+                "AbdulBari_MergingArray/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "AbdulBari_SortedArray/main",
+            "command": "AbdulBari_MergingArray/main",
             "dependsOn":[
                 "build"
             ],
