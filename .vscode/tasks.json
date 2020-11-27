@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "Reverse_Array/main.cpp",
+                "AbdulBari_SortedArray/main.cpp",
                 "-o",
-                "Reverse_Array/main"
+                "AbdulBari_SortedArray/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "Reverse_Array/main",
+            "command": "AbdulBari_SortedArray/main",
             "dependsOn":[
                 "build"
             ],
