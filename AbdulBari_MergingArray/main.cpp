@@ -59,7 +59,7 @@ Array* mergeArray(struct Array* arr1, struct Array* arr2)
 int main()
 {
     Array arr1 = {{4,4,5,6,7}, 5, 8};
-    Array arr2 = {{6,9,12,12,13}, 5, 8};
+    Array arr2 = {{8,9,12,12,13}, 5, 8};
     Array* arr4;
     
     arr4 = mergeArray(&arr1, &arr2);
