@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "AbdulBari_FindingMissingElement_SortedArray/main.cpp",
+                "AbdulBari_FindingMissingElement_UnSortedArray/main.cpp",
                 "-o",
-                "AbdulBari_FindingMissingElement_SortedArray/main"
+                "AbdulBari_FindingMissingElement_UnSortedArray/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "AbdulBari_FindingMissingElement_SortedArray/main",
+            "command": "AbdulBari_FindingMissingElement_UnSortedArray/main",
             "dependsOn":[
                 "build"
             ],
