@@ -16,15 +16,17 @@ int missingElement(struct Array arr)
     {
         if(arr.A[i] - i != diff)
         {
-            cout << (i + diff);
-            break;
+            cout << (i + diff) <<" ";
+            //break;
+
+            diff++; //for multiple missing elements, if you are finding one element then comment this and uncomment break statement.
         }
     }
 }
 
 int main()
 {
-    Array arr = {{2, 3, 4, 6, 7, 8, 9}, 7, 10};
+    Array arr = {{2, 3, 4, 6, 9}, 6, 10};
 
     cout<<"The missing element is: ";
     missingElement(arr);
