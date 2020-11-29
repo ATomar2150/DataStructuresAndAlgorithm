@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "AbdulBari_FindingMissingElement_UnSortedArray/main.cpp",
+                "AbdulBari_DuplicateElements/main.cpp",
                 "-o",
-                "AbdulBari_FindingMissingElement_UnSortedArray/main"
+                "AbdulBari_DuplicateElements/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "AbdulBari_FindingMissingElement_UnSortedArray/main",
+            "command": "AbdulBari_DuplicateElements/main",
             "dependsOn":[
                 "build"
             ],

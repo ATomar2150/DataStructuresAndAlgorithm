@@ -63,7 +63,7 @@ void findMissingElements(struct Array arr, int mx, int mn)
 
 int main()
 {
-    Array arr = {{6,7,8,9,11,12,15,16,17,18,19}, 11, 11}; //Max element is 19.
+    Array arr = {{6,7,8,9,11,12,16,15,19,18,17}, 11, 11}; //Max element is 19.
     int maximum = max(arr);
     cout << maximum <<endl;
 
