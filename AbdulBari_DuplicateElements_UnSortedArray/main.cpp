@@ -29,6 +29,7 @@ void findDuplicatesUnsortedArray(struct Array arr)
     }
 };
 
+//Try with Hash table
 
 int main()
 {
