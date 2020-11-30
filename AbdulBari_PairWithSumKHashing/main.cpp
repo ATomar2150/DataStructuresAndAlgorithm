@@ -23,7 +23,7 @@ int max(struct Array arr)
 
 void UsingHashing(struct Array arr,int max)
 {
-    int k = 10;
+    int sum = 10;
     int* H = new int[max+1];
 
     for (int i = 0; i < max+1; i++)
