@@ -33,13 +33,16 @@ void UsingHashing(struct Array arr,int max)
 
     for(int i = 0; i < arr.length; i++)
     {
-        if(H[k - arr.A[i]] != 0)
+        if( k -arr.A[i] > 0)
         {
-            cout <<"The first element is: " << arr.A[i];
-            cout <<"\nThe second element is: "<< k -arr.A[i];
-            cout <<"\nTheir sum is: "<<k << endl;
-            cout << endl;
+            if(H[k - arr.A[i]] != 0)
+            {
+                cout <<"The first element is: " << arr.A[i];
+                cout <<"\nThe second element is: "<< k -arr.A[i];
+                cout <<"\nTheir sum is: "<<k << endl;
+                cout << endl;
 
+            }
         }
         H[arr.A[i]]++;
     }
