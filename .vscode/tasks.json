@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "AbdulBari_CountingVowelsAndWord/main.cpp",
+                "AbdulBari_ValidatingAString/main.cpp",
                 "-o",
-                "AbdulBari_CountingVowelsAndWord/main"
+                "AbdulBari_ValidatingAString/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "AbdulBari_CountingVowelsAndWord/main",
+            "command": "AbdulBari_ValidatingAString/main",
             "dependsOn":[
                 "build"
             ],
