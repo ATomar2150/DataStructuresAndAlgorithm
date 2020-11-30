@@ -3,10 +3,11 @@ using namespace std;
 
 int main()
 {
-   char A[] = "How are you";
+   char A[] = "How are  you";
 
    int vowels=0;
    int constants=0;
+   int words = 0;
    
    for(int i = 0; A[i] != '\0'; i++)
    {
@@ -18,8 +19,16 @@ int main()
        {
            constants++;
        }
+       else if( A[i] == ' ') //calculating number of words
+       {   
+           if(A[i-1] != ' ') //if previous one is not a white space eg: "How are  you"
+           {
+           words++;
+           }
+       }
    }
    cout <<"Number of vowels are: "<< vowels <<endl;
    cout <<"Number of vowels are: "<< constants <<endl;
+    cout <<"Number of words are: "<< (words+1) <<endl;
     return 0;
 }
