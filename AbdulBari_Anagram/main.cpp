@@ -15,7 +15,7 @@ bool anagram(int H[],int num)
 
 int main()
 {
-    char A[] = "deckmal";
+    char A[] = "decimal";
     char B[] = "medical";
     int H[26] = {0};
     int i;
