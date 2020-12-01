@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "AbdulBari_DisplayLinkedList/main.cpp",
+                "AbdulBari_DisplayingLinkedListRecursively/main.cpp",
                 "-o",
-                "AbdulBari_DisplayLinkedList/main"
+                "AbdulBari_DisplayingLinkedListRecursively/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "AbdulBari_DisplayLinkedList/main",
+            "command": "AbdulBari_DisplayingLinkedListRecursively/main",
             "dependsOn":[
                 "build"
             ],
