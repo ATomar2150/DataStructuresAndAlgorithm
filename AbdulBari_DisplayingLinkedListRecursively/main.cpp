@@ -74,6 +74,21 @@ int RSum(struct Node* head)
     
 }
 
+int max(struct Node* head)
+{
+    int maximum = 0;
+    while(head)
+    {
+        if(maximum < head->data)
+        {
+            maximum = head->data;
+            head = head->next;
+        }
+
+    }
+    return maximum;
+}
+
 int main()
 {
     int A[] = {3, 4, 5, 6, 7};
@@ -89,7 +104,9 @@ int main()
     cout <<endl;
     sum(head);
 
-    cout <<"Recursive sum is: "<< RSum(head);
+    cout <<"Recursive sum is: "<< RSum(head) <<endl;
+
+    cout <<"The maximum value is: "<< max(head);
 
     return 0;
 }
