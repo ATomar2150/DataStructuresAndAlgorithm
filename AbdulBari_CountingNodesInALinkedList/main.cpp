@@ -7,9 +7,10 @@ struct Node
     Node* next;
 };
 
+//declare the head globally
 struct Node* head = NULL;
 
-void create(int A[], int n)
+void create(int A[], int num)
 {
     Node* last;
     Node* temp;
@@ -17,51 +18,50 @@ void create(int A[], int n)
     head = new Node;
     head->data = A[0];
     head->next = NULL;
-
-    last = new Node;
     last = head;
 
-    for(int i = 1; i < n; i++)
+    for(int i = 1; i < num; i++)
     {
         temp = new Node;
         temp->data = A[i];
         temp->next = NULL;
-
         last->next = temp;
+
         last = temp;
     }
+
 }
 
 void display(struct Node* head)
 {
     while(head != NULL)
     {
-        cout << head->data <<" ";
+        cout << head->data << " ";
         head = head->next;
     }
 }
 
-void Rdisplay(struct Node* head)
+int counting(struct Node* head)
 {
-    if(head != NULL)
+    int count = 0;
+     while(head != NULL)
     {
-        cout << head->data << " ";
-        Rdisplay(head->next);
-        
+        count++;
+        head = head->next;
     }
+    return count;
 }
 
 int main()
 {
-    int A[] = {3, 4, 5, 6, 7};
+    int A[] = {3, 4, 5, 6, 7 ,8 ,9};
 
-    create(A,5);
+    create(A,7);
 
     display(head);
-    
-    cout << endl;
 
-    Rdisplay(head);
+    int times = counting(head);
 
+    cout<< "\nThe number of nodes are: "<<times;
     return 0;
 }
