@@ -62,6 +62,7 @@ int Delete(struct Array* arr, int index)
     return 0; //if index is invalid
 };
 
+
 int main()
 {
     struct Array arr = {{2, 3, 4, 5, 6}, 10, 5};
