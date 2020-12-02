@@ -46,9 +46,32 @@ void Rdisplay(struct Node* head)
     if(head != NULL)
     {
         cout << head->data << " ";
-        Rdisplay(head->next);
-        
+        Rdisplay(head->next); 
     }
+}
+
+void sum(struct Node* head)
+{
+    int sum = 0;
+    while(head != NULL)
+    {
+        sum = sum + head->data;
+        head = head->next;
+    }
+    cout <<"The sum is: "<< sum <<endl;
+}
+
+int RSum(struct Node* head)
+{
+    if(head == 0)
+    {
+        return 0;
+    }
+    else
+    {
+        return RSum(head->next) + head->data;
+    }
+    
 }
 
 int main()
@@ -62,6 +85,11 @@ int main()
     cout << endl;
 
     Rdisplay(head);
+
+    cout <<endl;
+    sum(head);
+
+    cout <<"Recursive sum is: "<< RSum(head);
 
     return 0;
 }
