@@ -56,27 +56,51 @@ void insertLast(int x)
         last = temp;
     }
     
-
 }
 
+insertInSortedLinkedList(int x)
+{
+    Node* p;
+    p = head;
+
+    Node* q = NULL;
+
+    Node* temp = new Node;
+    temp->data = x;
+    temp->next = NULL;
+
+    while(p && p->data < x)
+    {
+        q = p;
+        p = p->next;
+    }
+
+    temp->next = q->next;
+    q->next = temp;
+}
 
 int main()
 {
-    int A[] = {3, 5, 9, 11};
+    int A[] = {3, 5, 9, 15};
 
     create(A, 4);
 
     display(head);
 
+    cout << endl;
 
+    insertLast(20);
+
+    display(head);
 
     cout << endl;
 
-    insertLast(10);
-    insertLast(20);
-    insertLast(30);
-    insertLast(40);
-    insertLast(50);
+    insertInSortedLinkedList(10);
+
+    display(head);
+    cout << endl;
+
+    insertInSortedLinkedList(12);
 
     display(head);
 
