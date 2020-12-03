@@ -69,14 +69,31 @@ insertInSortedLinkedList(int x)
     temp->data = x;
     temp->next = NULL;
 
-    while(p && p->data < x)
+    if(head == 0)
     {
-        q = p;
-        p = p->next;
+        head = temp;
     }
-
-    temp->next = q->next;
-    q->next = temp;
+    else
+    {
+        while(p && p->data < x)
+        {
+            q = p;
+            p = p->next;
+        }
+        if(p == head)
+        {
+            temp->next = head;
+            head = temp;
+        }
+        else
+        {
+            temp->next = q->next;
+            q->next = temp;
+        }
+        
+    }
+    
+  
 }
 
 int main()
