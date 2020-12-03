@@ -92,8 +92,40 @@ insertInSortedLinkedList(int x)
         }
         
     }
-    
-  
+}
+
+int deleted(int index)
+{
+    Node* p;
+    Node* q;
+    int x;
+
+    if(index == 1)
+    {
+        x = head->data; // we are storing the value of first node in x
+
+        p = head;
+        head = head->next;
+        delete p;
+    }
+    else
+    {
+        p = head;
+        q = NULL;
+        for(int i = 0; i < index-1 && p; i++)
+        {
+            q = p;
+            p = p->next;
+        }
+        if(p)
+        {
+            q->next = p->next;
+            x = p->data;
+            delete p;
+        }
+    }
+    return x;
+
 }
 
 int main()
@@ -103,21 +135,24 @@ int main()
     create(A, 4);
 
     display(head);
-
-    cout << endl;
+    cout <<"\nInserting element from last..... "<< endl;
 
     insertLast(20);
 
     display(head);
-
-    cout << endl;
+    cout <<"\nInserting element in sorted list..... "<< endl;
 
     insertInSortedLinkedList(10);
 
     display(head);
-    cout << endl;
+    cout <<"\nInserting element in sorted list..... "<< endl;
+
 
     insertInSortedLinkedList(12);
+
+    display(head);
+
+    cout<<"\nThe deleted element is: "<<deleted(3) <<endl;;
 
     display(head);
 
