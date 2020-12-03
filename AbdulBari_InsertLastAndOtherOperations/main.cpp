@@ -148,11 +148,56 @@ bool checkingSort(struct Node* head)
     return true;
 }
 
+void deleteDuplicate(struct Node* head)
+{
+    Node* p;
+    p = head;
+    Node* q = p->next;
+
+    while(q != NULL)
+    {
+        if(p->data != q->data)
+        {
+            p = q;
+            q = q->next;
+        }
+        else
+        {
+            p->next = q->next;
+            delete q;
+            q = p->next;
+        }
+    }
+}
+
+void reversing(struct Node* head)
+{
+    Node* q = head;
+    
+    int B[7];
+    int i = 0;
+    while(q != NULL)
+    {
+        B[i] = q->data;
+        q = q->next;
+        i++;
+    }
+
+    q = head;
+    i--;
+    while(q != NULL)
+    {
+        q->data = B[i];
+        q = q->next;
+        i--;
+    }
+
+}
 int main()
 {
-    int A[] = {3, 5, 9, 15};
+    int A[] = {3, 5, 5, 9, 9, 15};
 
-    create(A, 4);
+    create(A, 6);
 
     display(head);
     cout <<"\nInserting element from last..... "<< endl;
@@ -184,6 +229,20 @@ int main()
     {
         cout<<"\nThis list is not sorted.";
     };
+
+    //DELETING DUPLICATES
+    cout << endl;
+    display(head);
+    cout <<"\n\nDeleting duplicates..... "<< endl;
+   
+    deleteDuplicate(head);
+
+    display(head);
+    //Reversing
+
+    cout << endl;
+    reversing(head);
+    display(head);
 
     return 0;
 }
