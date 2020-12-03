@@ -128,6 +128,26 @@ int deleted(int index)
 
 }
 
+bool checkingSort(struct Node* head)
+{
+    Node* p;
+    Node* q;
+    
+    p = head;
+    cout <<endl;
+    while(p->next != NULL)
+    {
+        q = p;
+        p = p->next;
+        cout <<"\n"<<q->data <<" < "<<p->data;
+        if(q->data > p->data)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
 int main()
 {
     int A[] = {3, 5, 9, 15};
@@ -155,6 +175,15 @@ int main()
     cout<<"\nThe deleted element is: "<<deleted(3) <<endl;;
 
     display(head);
+
+    if(checkingSort(head))
+    {
+        cout<<"\nThis list is sorted.";
+    }
+    else
+    {
+        cout<<"\nThis list is not sorted.";
+    };
 
     return 0;
 }
