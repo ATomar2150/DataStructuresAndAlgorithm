@@ -193,6 +193,24 @@ void reversing(struct Node* head)
     }
 
 }
+
+void reversingBySlidingPointers(struct Node* p)
+{
+    Node* q = NULL; 
+    Node* r = NULL;
+
+    while(p != NULL)
+    {
+        r = q;
+        q = p;
+        p = p->next;
+        q->next = r;
+    }
+
+    head = q;
+}
+
+
 int main()
 {
     int A[] = {3, 5, 5, 9, 9, 15};
@@ -234,14 +252,18 @@ int main()
     cout << endl;
     display(head);
     cout <<"\n\nDeleting duplicates..... "<< endl;
-   
     deleteDuplicate(head);
-
     display(head);
-    //Reversing
 
-    cout << endl;
-    reversing(head);
+    //Reversing
+      cout << endl;
+    // cout <<"REVERSING.....\n";
+    // reversing(head);
+    // display(head);
+    // cout << endl <<endl;
+
+    cout <<"Reversing by Sliding Pointers.\n";
+    reversingBySlidingPointers(head);
     display(head);
 
     return 0;
