@@ -10,7 +10,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/AbdulBari_UnionOfSortedArray/main.exe",
+            "program": "${workspaceFolder}/AbdulBari_ConcatAndMerge_TwoLinkedList/main.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

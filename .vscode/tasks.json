@@ -8,16 +8,16 @@
             "type": "shell",
             "command": "g++",
             "args": [
-                "AbdulBari_InsertLastAndOtherOperations/main.cpp",
+                "AbdulBari_ConcatAndMerge_TwoLinkedList/main.cpp",
                 "-o",
-                "AbdulBari_InsertLastAndOtherOperations/main"
+                "AbdulBari_ConcatAndMerge_TwoLinkedList/main"
             ],
             "problemMatcher": []
         },
         {
             "label": "run",
             "type": "shell",
-            "command": "AbdulBari_InsertLastAndOtherOperations/main",
+            "command": "AbdulBari_ConcatAndMerge_TwoLinkedList/main",
             "dependsOn":[
                 "build"
             ],

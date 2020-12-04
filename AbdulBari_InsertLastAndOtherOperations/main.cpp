@@ -256,11 +256,11 @@ int main()
     display(head);
 
     //Reversing
-      cout << endl;
-    // cout <<"REVERSING.....\n";
-    // reversing(head);
-    // display(head);
-    // cout << endl <<endl;
+    cout << endl << endl;
+    cout <<"REVERSING.....\n";
+    reversing(head);
+    display(head);
+    cout << endl <<endl;
 
     cout <<"Reversing by Sliding Pointers.\n";
     reversingBySlidingPointers(head);
